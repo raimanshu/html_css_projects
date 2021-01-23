@@ -4,5 +4,5 @@ Showcase my designing skills
 
 
 Himanshu Rai
-( Software Engineer )
-( Contact no- 9318370448 / 8130325257 )
+ Angular | Javascript | Html | Css.....
+
