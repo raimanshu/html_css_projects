@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>Css Projects</title>
+    </head>
+    <body>
+        <div>
+            <button onclick="attachfile('table_assignment_anu.html')">Table Assignment</button>
+            <button onclick="attachfile('comming_soon_assignment/comming_soon.html')">Comming Soon</button>
+        </div>
+        <iframe id="iframe" src="" height="100%" width="100%" title="Iframe Example"></iframe>
+    </body>
+</html>
+
+<script>
+    function attachfile(fileName){
+        document.getElementById('iframe').src = fileName;
+    }
+
+</script>

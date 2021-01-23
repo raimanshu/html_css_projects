@@ -1,0 +1,151 @@
+<html>
+
+<head>
+    <title>Invoice Sample</title>
+    <style>
+        /* body {
+            width: 100%;
+            height: auto;
+            padding: 10px;
+        } */
+
+        .outer_div {
+            padding: 20px;
+        }
+
+        td,
+        tr {
+            /* border: 1px solid black; */
+            height: 45px;
+        }
+
+        img {
+            height: 65px;
+            width: 65px;
+            /* text-align: center; */
+            border: 0px solid white;
+            border-radius: 100%;
+        }
+
+        .border {
+            border-bottom: 1px solid black;
+        }
+
+        tr:nth-child(even) {
+            background-color: #efefef;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #ffffff;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div style="text-align: center;">
+        <img src="shuttle.png" alt="icon" />
+    </div>
+    <div style="text-align: center;background: #eaeaea;">
+        <hr />
+        <div>
+            <h3>INVOICE 3-2-1</h3>
+        </div>
+        <hr />
+    </div>
+    <div style="overflow: hidden;    margin-top: 25px;
+    margin-bottom: 50px;">
+        <div style="width: 50%;float: left;">
+            <div style="width: 15%;float: left;">
+                <label>PROJECT</label><br>
+                <label>CLIENT</label><br>
+                <label>ADDRESS</label><br>
+                <label>EMAIL</label><br>
+                <label>DATE</label><br>
+                <label>DUE DATE</label><br>
+            </div>
+            <div style="width: 30%;padding-left: 10px;float: left;">
+                <label><b>Worldwide web</b></label><br>
+                <label><b>John Doe</b></label><br>
+                <label><b>Lorem ipsum, dolor sit</b></label><br>
+                <label>test@gmail.com</label><br>
+                <label><b>25th of Dec 2020</b></label><br>
+                <label><b>1st of Jan 2021</b></label><br>
+            </div>
+        </div>
+        <div style="width: 50%;float: left;text-align: right;">
+            <label><b>Company Name</b></label><br />
+            <label><b>499, Street No 2</b></label><br />
+            <label><b>Mohali, Punjab</b></label><br />
+            <label><b>test@anviam.com</b></label><br />
+        </div>
+    </div>
+    <div>
+        <table style="width: 100%;font-weight: bold;">
+            <tr style="font-weight: normal;">
+                <td>SERVICE</td>
+                <td>DESCRIPTION</td>
+                <td>PRICE</td>
+                <td>QTY</td>
+                <td>TOTAL</td>
+            </tr>
+            <tr  style="border-top: 1px solid gray;">
+                <td>Design</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                <td>$40.22</td>
+                <td>26</td>
+                <td>$1.040.00</td>
+            </tr>
+            <tr>
+                <td>Development</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                <td>$40.22</td>
+                <td>26</td>
+                <td>$1.040.00</td>
+            </tr>
+            <tr>
+                <td>SEO</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                <td>$40.22</td>
+                <td>26</td>
+                <td>$1.040.00</td>
+            </tr>
+            <tr>
+                <td>Trainning</td>
+                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit.</td>
+                <td>$40.22</td>
+                <td>26</td>
+                <td>$1.040.00</td>
+            </tr>
+            <tr>
+
+                <td colspan="3"></td>
+                <td>SUBTOTAL</td>
+                <td>$5,200.00</td>
+
+            </tr>
+            <tr>
+                <td colspan="3"></td>
+                <td>TAX 20%</td>
+                <td>$1,300.00</td>
+            </tr>
+            <tr style="border-top: 1px solid gray;">
+                <td colspan="3"></td>
+                <td>GRAND TOTAL</td>
+                <td>$6,500.00</td>
+            </tr>
+        </table>
+    </div>
+    <div style="margin-top: 20px;">
+        <label>NOTICE</label><br />
+        <label>A finance charge of 1.5% will be made on unpaid Documents after 30 days.</label>
+    </div>
+
+
+</body>
+
+</html>
