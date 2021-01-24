@@ -31,6 +31,7 @@
 
         .catering:hover {
             background-color: gray;
+            cursor: pointer;
         }
 
         .navbar ul li {
@@ -62,20 +63,24 @@
             margin: 10px 0px;
             border: none;
         }
+
+        .link {
+            color: black;
+            text-decoration: none;
+        }
     </style>
 </head>
 
 <body>
     <div>
-        <div style="padding: 8px 16px;letter-spacing: 4px;" class="navbar">
+        <div id="catering" style="padding: 8px 16px;letter-spacing: 4px;cursor: pointer;" class="navbar">
             <!-- <ul> -->
-            <p style="display: inline-block;padding: 8px 16px;margin: 0;font-size: 15px;" class="catering">Gourmet au
-                Catering</p>
+            <p style="display: inline-block;padding: 8px 16px;margin: 0;font-size: 15px;" class="catering"><a class="link" href="#catering">Gourmet au Catering</a></p>
             <!-- <div style=""> -->
             <ul>
-                <li style="padding: 8px 16px;font-size: 15px;" class="catering"><a>About</a></li>
-                <li style="padding: 8px 16px;font-size: 15px;" class="catering"><a>Menu</a></li>
-                <li style="padding: 8px 16px;font-size: 15px;" class="catering"><a>Contact</a></li>
+                <li style="padding: 8px 16px;font-size: 15px;" class="catering"><a class="link" href="#about">About</a></li>
+                <li style="padding: 8px 16px;font-size: 15px;" class="catering"><a class="link" href="#menu">Menu</a></li>
+                <li style="padding: 8px 16px;font-size: 15px;" class="catering"><a class="link" href="#contact">Contact</a></li>
             </ul>
             <!-- </div> -->
             <!-- </ul> -->
@@ -85,9 +90,12 @@
 
     <div>
         <img src="hamburger.jpg" alt="hamburger" style="height: auto;width: 100%;">
+        <h1 style="display: inline;padding: 12px 24px;    color: gray;
+        letter-spacing: 4px;
+        font-weight: 500;">Le Catering</h1>
     </div>
 
-    <div style="background-color: white;">
+    <div id="about" style="background-color: white;">
 
         <div style="width: 85%;margin: 0 auto;overflow: hidden;padding: 64px 0px;border-bottom: 1px solid gray;">
             <div style="display: inline-block;width: 49%; padding: 12px 24px;">
@@ -112,7 +120,7 @@
         </div>
 
 
-        <div style="width: 85%;margin: 0 auto;overflow: hidden;padding: 64px 0px;border-bottom: 1px solid gray;">
+        <div id="menu" style="width: 85%;margin: 0 auto;overflow: hidden;padding: 64px 0px;border-bottom: 1px solid gray;">
             <div style="display: inline-block;width: 42%;float: left;padding: 12px 24px;">
                 <h1 class="about_catering">Our Menu</h1>
                 <p style="letter-spacing: 4px;font-size: 18px;">Bread Basket</p>
@@ -133,7 +141,7 @@
             </div>
         </div>
 
-        <div style="width: 85%;margin: 0 auto;overflow: hidden;padding: 64px 0px;">
+        <div id="contact" style="width: 85%;margin: 0 auto;overflow: hidden;padding: 64px 0px;">
             <!-- Contact form  -->
             <h1 class="about_catering" style="text-align: left;">Contact</h1>
             <p style="font-size: 16px;">We offer full-service catering for any event, large or small. We understand your

@@ -14,13 +14,13 @@
     <!-- <div> -->
 
     <!-- Navbar code  -->
-    <div style="position: absolute;">
+    <div id="home" style="position: absolute;">
         <div class="navbar_div" style="position: fixed;width: 100%;background-color: black;">
             <ul>
-                <li><a>HOME</a></li>
-                <li><a>BAND</a></li>
-                <li><a>TOUR</a></li>
-                <li><a>CONTACT</a></li>
+                <li class="navbar_hov"><a style="text-decoration: none;color: white;" href="#home">HOME</a></li>
+                <li class="navbar_hov"><a style="text-decoration: none;color: white;" href="#band">BAND</a></li>
+                <li class="navbar_hov"><a style="text-decoration: none;color: white;" href="#tour">TOUR</a></li>
+                <li class="navbar_hov"><a style="text-decoration: none;color: white;" href="#contact">CONTACT</a></li>
                 <div class="dropdown">
                     <button class="dropbtn">MORE <i class="fa fa-caret-down" style="color: white;"></i></button>
                     <div class="dropdown-content">
@@ -32,22 +32,22 @@
 
 
                 <!-- <li><a>MORE</a><i class="arrow-down" style="color: white;"></i></li> -->
-                <li style="float: right;"><i class="fa fa-search"></i></li>
+                <li class="search" style="float: right;"><i class="fa fa-search"></i></li>
             </ul>
         </div>
     </div>
 
     <!-- Image background  -->
     <div>
-        <div class="slider" style="height: 600px;width: 100%;" >
+        <div class="slider" style="height: 600px;width: 100%;">
         </div>
 
     </div>
-   
+
 
 
     <!-- Three Images in sequence -->
-    <div style="background-color: white;margin: 0px 0px;">
+    <div id="band" style="background-color: white;margin: 0px 0px;">
         <div class="container" style="padding: 64px 24px;text-align: center;">
             <h1 style="font-family: Segoe UI,Arial,sans-serif;font-weight: 400;">THE BAND</h2>
                 <p style="font-family: Segoe UI,Arial,sans-serif;font-weight: 400;color: gray;"><em>We love music</em>
@@ -81,15 +81,15 @@
     </div>
 
     <!-- Tour dates  -->
-    <div style="background-color: black;margin: 0px 0px;">
+    <div id="tour" style="background-color: black;margin: 0px 0px;">
         <div class="container" style="padding: 64px 24px;text-align: center;background-color: black;">
             <h1 class="tour_dates">TOUR DATES</h1>
             <p class="tour_dates" style="color: gray;"><i>Remember to book your tickets!</i></p>
             <div style="background-color: white;margin-top: 34px;">
-                <p style="border-bottom: 1px solid gray;padding: 8px 16px;text-align: left;margin:0;color: gray;">September <span
-                        class="sold_out_btn">Sold out</span></p>
-                <p style="border-bottom: 1px solid gray;padding: 8px 16px;text-align: left;margin:0;color: gray;">October <span
-                        class="sold_out_btn">Sold out</span></p>
+                <p style="border-bottom: 1px solid gray;padding: 8px 16px;text-align: left;margin:0;color: gray;">
+                    September <span class="sold_out_btn">Sold out</span></p>
+                <p style="border-bottom: 1px solid gray;padding: 8px 16px;text-align: left;margin:0;color: gray;">
+                    October <span class="sold_out_btn">Sold out</span></p>
                 <p style="padding: 8px 16px;text-align: left;margin:0;color: gray;">November<span
                         style="background-color: black;border: 1px solid black;border-radius: 50px; color: white;float: right;padding: 1px 7px;margin-right: 16px;">3</span>
                 </p>
@@ -102,17 +102,18 @@
                         <p style="text-align: left;font-weight: 600;">New York</p>
                         <p style="text-align: left;color: gray;">Fri 37 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="buy_tickets">Buy Tickets</button>
+                        <button onclick="openTicketModal()" class="buy_tickets">Buy Tickets</button>
                     </div>
                 </div>
 
-                <div style="background-color: white;width: 31%;display: inline-block;margin-left: 7px;margin-right: 7px;">
+                <div
+                    style="background-color: white;width: 31%;display: inline-block;margin-left: 7px;margin-right: 7px;">
                     <img src="paris.jpg" style="width: 100%;height: 150px;" class="images">
                     <div style="padding: 0px 15px;text-align: left;">
                         <p style="text-align: left;font-weight: 600;">Paris</p>
                         <p style="color: gray;text-align: left;">Fri 37 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="buy_tickets">Buy Tickets</button>
+                        <button onclick="openTicketModal()" class="buy_tickets">Buy Tickets</button>
                     </div>
                 </div>
 
@@ -122,7 +123,7 @@
                         <p style="text-align: left;font-weight: 600;">San Francisco</p>
                         <p style="color: gray;text-align: left;">Fri 37 Nov 2016</p>
                         <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
-                        <button class="buy_tickets">Buy Tickets</button>
+                        <button onclick="openTicketModal()" class="buy_tickets">Buy Tickets</button>
                     </div>
                 </div>
             </div>
@@ -132,22 +133,29 @@
     </div>
 
     <!-- contact us  -->
-    <div style="background-color: white;">
+    <div id="contact" style="background-color: white;">
         <div class="container" style="text-align: center;padding: 64px 0px;">
             <h1 style="font-family:Segoe UI,Arial,sans-serif ;font-weight: 400;letter-spacing: 4px;">CONTACT</h1>
-            <p  style="font-family:Segoe UI,Arial,sans-serif ;font-weight: 400;color: gray;    font-size: 16px;margin: 35px 0px;"><i>Fan? Drop a note!</i></p>
+            <p
+                style="font-family:Segoe UI,Arial,sans-serif ;font-weight: 400;color: gray;    font-size: 16px;margin: 35px 0px;">
+                <i>Fan? Drop a note!</i>
+            </p>
             <div style="width: 100%;overflow: hidden;">
-                <div style="width: 50%;display: inline-block;float: left;text-align: left;font-size: 18px;line-height: normal;">
+                <div
+                    style="width: 50%;display: inline-block;float: left;text-align: left;font-size: 18px;line-height: normal;">
                     <p><span style="margin-right: 20px;"><i class="fa fa-map-marker"></i></span> Chicago, US</p>
                     <p><span style="margin-right: 19px;"><i class="fa fa-phone"></i></span> Phone: +00 151515</p>
                     <p><span style="margin-right: 19px;"><i class="fa fa-envelope"></i></span> Email: mail@mail.com</p>
                 </div>
-                <div style="width: 50%;display: inline-block;float: right;">
+                <div style="width: 48%;display: inline-block;float: right;">
                     <div style="width: 100%;display: inline-block;">
-                        <input placeholder="Name" style="border: 1px solid gray;margin-bottom: 8px; width: 47%; padding: 10px 3px;" />
-                        <input placeholder="Email" style="border: 1px solid gray;margin-bottom: 8px; width: 47%; padding: 10px 3px;" />
+                        <input placeholder="Name"
+                            style="border: 1px solid gray;margin-bottom: 8px; width: 47%; padding: 10px 3px;" />
+                        <input placeholder="Email"
+                            style="border: 1px solid gray;margin-bottom: 8px; width: 47%; padding: 10px 3px;" />
                     </div>
-                    <input placeholder="Message" style="border: 1px solid gray;margin-bottom: 8px; padding: 10px 3px;width: 92%;" />
+                    <input placeholder="Message"
+                        style="border: 1px solid gray;margin-bottom: 8px; padding: 10px 3px;width: 98%;" />
                     <button class="buy_tickets" style="float: right;">SEND</button>
                 </div>
             </div>
@@ -173,9 +181,61 @@
 
 
     <!-- </div> -->
+
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content" style="background-color: teal;">
+            <div style="padding: 10px;">
+                <span class="close" onclick="closeModal()">&times;</span>
+
+                <!-- <span><i class="fa fa-suitcase"></i></span><h1 style="padding: 32px 0px;text-align: center;color: white;">Tickets</h1> -->
+                <div style="text-align: center;margin: 20px 0px;">
+                    <span style="color: white;font-size: 28px;"><i class="fa fa-suitcase"></i></span>
+                    <p
+                        style="color: white;display: inline;margin: 0px;letter-spacing: 4px;font-size: 30px;font-family: 'Segoe UI',Arial,sans-serif;">
+                        Tickets</p>
+                </div>
+            </div>
+            <div style="background-color: white;padding: 12px;">
+                <form>
+                    <p><span><i class="fa fa-shopping-cart"></i></span> Tickets, $15 per person</p>
+                    <input style="width: 99%;padding: 10px 0px;" placeholder="How many?" required>
+                    <p><span><i class="fa fa-user"></i></span> Send To</p>
+                    <input style="width: 99%;padding: 10px 0px;" placeholder="Enter email" required>
+                    <button class="pay">PAY <span><i class="fa fa-check"></i></span></button>
+                </form>
+                <button class="close_modal" onclick="closeModal()">Close <span><i
+                            class="fa fa-remove"></i></span></button>
+                <p style="float: right;">Need <a href="#" onclick="closeModal()">help?</a></p>
+            </div>
+        </div>
+
+    </div>
+
+
 </body>
 
 </html>
+
+<script>
+    var modal = document.getElementById("myModal");
+
+    function openTicketModal() {
+        modal.style.display = "block";
+    }
+
+    function closeModal() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
 
 <!-- Points to remember  -->
 <!-- font-family, font-size  -->
