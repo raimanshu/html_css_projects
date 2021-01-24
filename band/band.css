@@ -7,6 +7,14 @@ body {
 
 .navbar_div {
     background-color: black;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+}
+
+.navbar_list{
+  text-decoration: none;
+  color: white;
 }
 
 /* .navbar_div p {
@@ -30,11 +38,7 @@ div ul li {
     color: white;
 }
 
-.slider {
-    background: url(la.jpg);
-    width: 100%;
-    height: auto;
-}
+
 .container {
     width: 60%;
     margin: 0px auto;
@@ -73,11 +77,25 @@ div ul li {
     filter: brightness(75%);
 }
 
+.three_images{
+  background-color: white;
+  margin: 0px 0px;
+}
+.the_band{
+  font-family: Segoe UI,Arial,sans-serif;font-weight: 400;
+}
+
+.tour{
+  background-color: black;margin: 0px 0px;
+}
+
 .social:hover{
     opacity: 0.5;
 }
 
 .slider{
+  width: 100%;
+  height: auto;
     animation-name: slide_image;
     animation-duration: 10s;
     animation-iteration-count: infinite;
@@ -88,6 +106,10 @@ div ul li {
     0% {background-image: url(la.jpg);}
     50% {background-image: url(ny.jpg);}
     100% {background-image: url(chicago.jpg); }
+}
+
+.number_circle{
+  background-color: black;border: 1px solid black;border-radius: 50px; color: white;float: right;padding: 1px 7px;margin-right: 16px;
 }
 
 /* drpdown */
@@ -138,6 +160,9 @@ div ul li {
       text-decoration: none;
       color: white;
       background-color: gray;
+  }
+  .search {
+    float: right;
   }
   .search:hover{
       color: white;

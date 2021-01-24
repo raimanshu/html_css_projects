@@ -15,12 +15,12 @@
 
     <!-- Navbar code  -->
     <div id="home" style="position: absolute;">
-        <div class="navbar_div" style="position: fixed;width: 100%;background-color: black;">
+        <div class="navbar_div">
             <ul>
-                <li class="navbar_hov"><a style="text-decoration: none;color: white;" href="#home">HOME</a></li>
-                <li class="navbar_hov"><a style="text-decoration: none;color: white;" href="#band">BAND</a></li>
-                <li class="navbar_hov"><a style="text-decoration: none;color: white;" href="#tour">TOUR</a></li>
-                <li class="navbar_hov"><a style="text-decoration: none;color: white;" href="#contact">CONTACT</a></li>
+                <li class="navbar_hov"><a class="navbar_list" href="#home">HOME</a></li>
+                <li class="navbar_hov"><a class="navbar_list" href="#band">BAND</a></li>
+                <li class="navbar_hov"><a class="navbar_list" href="#tour">TOUR</a></li>
+                <li class="navbar_hov"><a class="navbar_list" href="#contact">CONTACT</a></li>
                 <div class="dropdown">
                     <button class="dropbtn">MORE <i class="fa fa-caret-down" style="color: white;"></i></button>
                     <div class="dropdown-content">
@@ -32,7 +32,7 @@
 
 
                 <!-- <li><a>MORE</a><i class="arrow-down" style="color: white;"></i></li> -->
-                <li class="search" style="float: right;"><i class="fa fa-search"></i></li>
+                <li class="search"><i class="fa fa-search"></i></li>
             </ul>
         </div>
     </div>
@@ -41,16 +41,15 @@
     <div>
         <div class="slider" style="height: 600px;width: 100%;">
         </div>
-
     </div>
 
-
-
     <!-- Three Images in sequence -->
-    <div id="band" style="background-color: white;margin: 0px 0px;">
+    <div id="band" class="three_images">
         <div class="container" style="padding: 64px 24px;text-align: center;">
-            <h1 style="font-family: Segoe UI,Arial,sans-serif;font-weight: 400;">THE BAND</h2>
-                <p style="font-family: Segoe UI,Arial,sans-serif;font-weight: 400;color: gray;"><em>We love music</em>
+            <h1 class="the_band">
+                THE BAND
+                </h2>
+                <p class="the_band" style="color: gray;"><em>We love music</em>
                 </p>
                 <p style="text-align: justify;">
                     We have created a fictional band website. Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -90,8 +89,7 @@
                     September <span class="sold_out_btn">Sold out</span></p>
                 <p style="border-bottom: 1px solid gray;padding: 8px 16px;text-align: left;margin:0;color: gray;">
                     October <span class="sold_out_btn">Sold out</span></p>
-                <p style="padding: 8px 16px;text-align: left;margin:0;color: gray;">November<span
-                        style="background-color: black;border: 1px solid black;border-radius: 50px; color: white;float: right;padding: 1px 7px;margin-right: 16px;">3</span>
+                <p style="padding: 8px 16px;text-align: left;margin:0;color: gray;">November<span class="number_circle">3</span>
                 </p>
             </div>
 
@@ -244,3 +242,4 @@
 <!-- Question  -->
 <!-- Contact us div structure  -->
 <!-- Chicago is not taking line height  -->
+<!-- why float is not used with display ?  -->
