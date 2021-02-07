@@ -35,7 +35,7 @@
             /* margin: 2px; */
         }
 
-        .container div img {}
+        /* .container div img {} */
 
         .contact_btn {
             width: 100%;
@@ -62,7 +62,7 @@
             margin: 10px 0;
         }
 
-        .send_msg_btn:hover {   
+        .send_msg_btn:hover {
             color: black;
             background-color: gray;
             border: 1px solid gray;
@@ -82,12 +82,36 @@
             width: 100%;
             height: auto;
         }
+
+        .about_div {
+            background-color: white;
+            width: 24%;
+            display: inline-block;
+            padding: 4px;
+            filter: grayscale(0.5);
+        }
+
+        .br_label {
+            font-size: 40px;
+            color: white;
+            background-color: black;
+            opacity: 0.7;
+            font-family: sans-serif;
+            font-weight: bold;
+            padding: 12px;
+        }
+        .arch_label{
+            font-size: 40px;
+            color: white;
+            font-family: sans-serif;
+            padding: 12px;
+        }
     </style>
 </head>
 
 <body>
 
-    <div>
+    <!-- <div>
         <div class="navbar">
             <ul>
                 <li>BR Architects</li>
@@ -98,11 +122,14 @@
                 </div>
             </ul>
         </div>
-    </div>
+    </div> -->
 
 
     <div>
-        <label></label>
+        <div style="    position: absolute;top: 115%;left: 40%;">
+            <label class="br_label">BR</label>
+            <span class="arch_label">Architects</span>
+        </div>
         <img src="../architect_temp/architect.jpg">
     </div>
 
@@ -116,18 +143,18 @@
         <div class="container">
             <div style="display: inline;">
                 <label>Summer House</label>
-                <img style="width: 24%;" src="../architect_temp/house5.jpg">
+                <img style="width: 24%;" src="../architect_temp/house2.jpg">
 
             </div>
 
             <div style="display: inline;">
                 <label>Brick House</label>
-                <img style="width: 24%;" src="../architect_temp/house5.jpg">
+                <img style="width: 24%;" src="../architect_temp/house3.jpg">
             </div>
 
             <div style="display: inline;">
                 <label>Renovated House</label>
-                <img style="width: 24%;" src="../architect_temp/house5.jpg">
+                <img style="width: 24%;" src="../architect_temp/house4.jpg">
             </div>
 
             <div style="display: inline;">
@@ -145,17 +172,17 @@
 
             <div style="display: inline;">
                 <label>Brick House</label>
-                <img style="width: 24%;" src="../architect_temp/house5.jpg">
+                <img style="width: 24%;" src="../architect_temp/house2.jpg">
             </div>
 
             <div style="display: inline;">
                 <label>Renovated House</label>
-                <img style="width: 24%;" src="../architect_temp/house5.jpg">
+                <img style="width: 24%;" src="../architect_temp/house4.jpg">
             </div>
 
             <div style="display: inline;">
                 <label>Barn House</label>
-                <img style="width: 24%;" src="../architect_temp/house5.jpg">
+                <img style="width: 24%;" src="../architect_temp/house3.jpg">
             </div>
         </div>
 
@@ -169,42 +196,46 @@
                 architecto repellendus modi quis, tempore asperiores facere. Lorem ipsum, dolor sit amet consectetur
                 adipisicing elit. Tenetur provident modi quidem eligendi minus obcaecati ea ducimus consequatur, fugit
                 aperiam aspernatur nam ipsum incidunt laboriosam voluptas qui reprehenderit atque ab.</p>
-            <div style="background-color: white;width: 24%;display: inline-block;padding: 4px;">
+            <div class="about_div">
                 <img src="../architect_temp/team2.jpg" style="width: 100%;" class="images">
                 <div style="text-align: left;">
                     <p style="text-align: left;font-size: 24px;">John Doe</p>
                     <p style="color: gray;text-align: left;font-size: 16px;">CEO & Founder</p>
-                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
                     <button class="contact_btn">Contact</button>
                 </div>
             </div>
 
-            <div style="background-color: white;width: 24%;display: inline-block;padding: 4px;">
-                <img src="../architect_temp/team2.jpg" style="width: 100%;" class="images">
+            <div class="about_div">
+                <img src="../architect_temp/team1.jpg" style="width: 100%;" class="images">
                 <div style="text-align: left;">
-                    <p style="text-align: left;font-size: 24px;">John Doe</p>
-                    <p style="color: gray;text-align: left;font-size: 16px;">CEO & Founder</p>
-                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <p style="text-align: left;font-size: 24px;">Jane Doe</p>
+                    <p style="color: gray;text-align: left;font-size: 16px;">Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
                     <button class="contact_btn">Contact</button>
                 </div>
             </div>
 
-            <div style="background-color: white;width: 24%;display: inline-block;padding: 4px;">
-                <img src="../architect_temp/team2.jpg" style="width: 100%;" class="images">
+            <div class="about_div">
+                <img src="../architect_temp/team3.jpg" style="width: 100%;" class="images">
                 <div style="text-align: left;">
-                    <p style="text-align: left;font-size: 24px;">John Doe</p>
-                    <p style="color: gray;text-align: left;font-size: 16px;">CEO & Founder</p>
-                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <p style="text-align: left;font-size: 24px;">Mike Ross</p>
+                    <p style="color: gray;text-align: left;font-size: 16px;">Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
                     <button class="contact_btn">Contact</button>
                 </div>
             </div>
 
-            <div style="background-color: white;width: 24%;display: inline-block;padding: 4px;">
-                <img src="../architect_temp/team2.jpg" style="width: 100%;" class="images">
+            <div class="about_div">
+                <img src="../architect_temp/team4.jpg" style="width: 100%;" class="images">
                 <div style="text-align: left;">
-                    <p style="text-align: left;font-size: 24px;">John Doe</p>
-                    <p style="color: gray;text-align: left;font-size: 16px;">CEO & Founder</p>
-                    <p>Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                    <p style="text-align: left;font-size: 24px;">Dan Star</p>
+                    <p style="color: gray;text-align: left;font-size: 16px;">Architect</p>
+                    <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.
+                    </p>
                     <button class="contact_btn">Contact</button>
                 </div>
             </div>
