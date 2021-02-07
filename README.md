@@ -17,7 +17,7 @@ HTML + CSS
 ![basic_table](project-intro/basic_table.png)
 ## Invoice Sample
 ![invoice](project-intro/invoice.png)
-## Invoice Sample
+## BR Architect
 ![invoice](project-intro/arch.png)
 
 
