@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Google Maps</title>
+    <script id="map-script"></script>
+
+</head>
+
+<body>
+
+    <h3>Google Map</h3>
+
+    <h4>To Enable map please enter your API key :</h4>
+    <input id="keyInput">
+    <button onclick="setAPIKey()">Enter</button>
+    <small>Use blank key to see map</small>
+
+    <div id="googleMap" style="width:100%;height:400px;"></div>
+
+
+
+
+</body>
+
+</html>
+
+<script>
+    function myMap() {
+        var mapProp = {
+            // specifies where to center the map (using latitude and longitude coordinates).
+            center: new google.maps.LatLng(51.508742, -0.120850),
+            // specifies the zoom level for the map
+            zoom: 5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"), mapProp);
+
+        // Overlays
+        // Marker - Single locations on a map.Markers can also display custom icon images
+        // Polyline - Series of straight lines on a map
+        // Polygon - Series of straight lines on a map, and the shape is "closed"
+        // Circle and Rectangle
+        // Info Windows - Displays content within a popup balloon on top of a map
+        // Custom overlays
+        var marker = new google.maps.Marker({ 
+            position: myCenter,
+            // animate marker 
+            animation:google.maps.Animation.BOUNCE,
+            // icon instead of marker 
+            // icon:'pinkball.png'
+        });
+        marker.setMap(map);
+    }
+
+    function setAPIKey() {
+        let k = document.getElementById('keyInput').value.trim();
+        // let k = 'AIzaSyBBwhKViA9NfSWCPess_CU5kRnvw2HWYTQ';
+        let scr = document.getElementById('map-script');
+        scr.src = `https://maps.googleapis.com/maps/api/js?key=${k}&callback=myMap`;
+        myMap();
+    }
+</script>
