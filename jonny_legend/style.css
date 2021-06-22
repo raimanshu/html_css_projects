@@ -1,0 +1,107 @@
+/* .container-fluid {
+    padding: 0;
+} */
+img{
+    height: auto;
+    width: 100%;
+}
+.top_div{
+    /* background: rgba(0, 0, 0, 0) url('./images/header-bg.jpg') no-repeat scroll 0 100%; */
+    /* background: rgba(0, 0, 0, 0) url('images/header-bg.jpg') no-repeat scroll center 100% / cover; */
+    /* opacity: 0.3; */
+}
+
+
+/* .top_div img{
+    height: auto;
+    width: 100%;
+    opacity: 0.5;
+}
+.top_div div.container-fluid{
+    position: absolute;
+    top: 35%;
+    text-align: center;
+} */
+
+/* Abou section  */
+/* div.about .row .col-8{
+    vertical-align: middle;
+} */
+
+.profile_image{
+    /* background-image: url('./images/profile-bg.png'); */
+
+    background: rgba(0, 0, 0, 0) url('./images/profile-bg.png') no-repeat scroll 0 100%;
+    margin-right: -30px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+}
+.profile_image img{
+    border: 10px solid gray;
+}
+.profile_wrapper{
+    padding-top: 110px;
+    /* margin-left: -30px; */
+}
+h1{
+    /* background: rgba(0, 0, 0, 0) url('./images/title-bg.png') no-repeat scroll 0 0; */
+    background: rgba(0, 0, 0, 0) url('./images/title-bg.png') repeat-y scroll 0 0;
+    font-weight: 700;
+    display: inline-block;
+}
+
+.button{
+    background-color: #000000;
+    border-color: #000000;
+    color: #ffffff;
+    margin-right: 30px;
+    padding: 0 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.button_white{
+    background-color: #ffffff;
+    border-color: #000000;
+    color: #000000;
+    margin-right: 30px;
+    padding: 0 30px;
+    font-size: 14px;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.button_white:hover{
+    background-color: #000000;
+    color: #ffffff;
+}
+/* .single_progress_bar{
+    margin-bottom: 40px;
+} */
+/* .single_progress_bar h6{
+    color: #000000;
+    font-weight: 500;
+    letter-spacing: 2px;
+    line-height: 1;
+} */
+.progress {
+    background: #e5e5e5 none repeat scroll 0 0;
+    border-radius: 0;
+    box-shadow: none;
+    height: 8px;
+    margin-bottom: 0;
+    overflow: visible;
+}
+.progress-bar{
+    background-color: black;
+}
+.profile-description li::after {
+    background: #1f1e26 none repeat scroll 0 0;
+    content: "";
+    font-size: 12px;
+    height: 5px;
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+    width: 5px;
+}

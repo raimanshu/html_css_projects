@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Theme Company</title>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Edge browser compatibility  -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Add Cdn -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Font Awsome Cdn link  -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="blabla_company_theme.css">
+</head>
+
+<body>
+    <!-- -where to use jumbotron, card, well, panel ??
+    -we can add color_name with text-, and bg-
+    -we can use form-inline after giving size attribute to input, instead container, padding-x or margin-x
+    -How to decide which one to use h1,h2,h3,h4,h5,h6
+    -<h2><strong>Text : </strong>test</h2> to make size same with bold text title in same line -> not using label inside
+    <p></p>
+    - always start new line with new row class.
+    - how to make row div responsive when for loop is involved ??
+    - change fontawsome size using class - fa-6x, fa-2x, fa-lg, .fa { transform: scale(1.5,1); }
+    - Default properties of form-group, form-control, row. How to use them ??
+    - put ml-auto to make links in left inside nav
+    - when to use <header></header>, <footer></footer> 
+    - Vertical allign items in a div - https://stackoverflow.com/questions/42252443/vertical-align-center-in-bootstrap
+    - put transition on hover border shadow + animation
+    - How to make later rows come first
+
+
+-->
+
+    <nav class="navbar navbar-expand-md py-0  fixed-top">
+        <div class="container my-0">
+            <div class="justify-content-end">
+                <a class="navbar-brand " href="#">Logo</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav ml-auto my-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">SERVICES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#pricing">PRICING</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">CONTACT</a>
+                    </li>
+                </ul>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon bg-grey">
+                    <i class="fa fa-bars" style="color: black;"></i>
+                </span>
+            </button>
+
+        </div>
+    </nav>
+
+
+    <div class="jumbotron mt-4">
+        <h1>Company</h1>
+        <p>We specialize in blablabla</p>
+
+        <form class="form-inline justify-content-center ">
+            <div class="input-group">
+                <input type="text" class="form-control" size="50" placeholder="Email Address">
+                <div class="input-group-append">
+                    <button class="btn btn-danger text-white" type="submit">Subscribe</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div id="about" class="container-fluid  ">
+        <div class="row revert_col">
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <h2>About Company Page</h2>
+                <h4 style="font-size: 19px;" class="mb-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4>
+                <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <button class="btn btn-secondary">Get in Touch</button>
+            </div>
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 text-center my-auto mx-auto d-block">
+                <!-- <span class="glyphicon glyphicon-signal logo"></span> -->
+                <span>
+                    <i class="fa fa-signal fa-6x"></i>
+                </span>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container-fluid bg-grey  ">
+        <div class="row revert_col">
+            <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2 text-center my-auto mx-auto d-block">
+                <!-- <span class="glyphicon glyphicon-globe logo"></span> -->
+                <span>
+                    <i class="fa fa-globe-americas  fa-6x"></i>
+                </span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
+                <h2>Our Values</h2>
+                <h4 style="font-size: 19px;" class="mb-5"><strong>MISSION:</strong> Our mission lorem ipsum dolor sit
+                    amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</h4>
+                <p class="text-muted"><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur
+                    adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem
+                    ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                    aliquip ex ea commodo consequat.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid text-center  ">
+        <h2>SERVICES</h2>
+        <h4 class="mb-5">What we offer</h4>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <span class="h-25"><i class="fas fa-heart fa-3x"></i></span>
+                <h4>LOVE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <span class="h-25">
+                    <i class="fa fa-briefcase fa-3x"></i>
+                </span>
+                <h4>JOB DONE</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <span class="h-25">
+                    <i class="fa fa-power-off fa-3x"></i>
+                </span>
+                <h4>POWER</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <span class="h-25"><i class="fas fa-leaf fa-3x"></i></span>
+                <h4>GREEN</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <span class="h-25">
+                    <i class="fa fa-certificate fa-3x"></i>
+                </span>
+                <h4>CERTIFIED</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                <span class="h-25">
+                    <i class="fas fa-wrench fa-3x"></i>
+                </span>
+                <h4>HARD WORK</h4>
+                <p>Lorem ipsum dolor sit amet..</p>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="container-fluid text-center bg-grey ">
+        <h2>Portfolio</h2>
+        <h4 class="mb-5">What we have created</h4>
+        <div class="row text-muted mb-5">
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 py-2">
+                <div class="card px-0">
+                    <img class="img-fluid" src="./paris.jpg">
+                    <p><strong>Paris</strong></p>
+                    <p>Yes, We built Paris</p>
+                </div>
+
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 py-2">
+                <div class="card px-0">
+                    <img class="img-fluid" src="./newyork.jpg">
+                    <p><strong>New York</strong></p>
+                    <p>Yes, We built New York</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 py-2">
+                <div class="card px-0">
+                    <img class="img-fluid" src="./sanfran.jpg">
+                    <p><strong>San Fransisco</strong></p>
+                    <p>Yes, We built San Fransisco</p>
+                </div>
+            </div>
+        </div>
+
+
+        <h2 class="text-center">WHAT OUR CUSTOMERS SAY</h2>
+        <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- The slideshow -->
+            <div class="carousel-inner text-center">
+                <div class="carousel-item active">
+                    <h4>"This company is the best. I am so happy with the result!"<br><span
+                            style="font-style:normal;">Michael Roe, Vice President, Comment Box</span></h4>
+                </div>
+                <div class="carousel-item">
+                    <h4>"One word... WOW!!"<br><span style="font-style:normal;">John Doe, Salesman, Rep Inc</span></h4>
+                </div>
+                <div class="carousel-item">
+                    <h4>"Could I... BE any more happy with this company?"<br><span style="font-style:normal;">Chandler
+                            Bing,
+                            Actor, FriendsAlot</span></h4>
+                </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev bg-none text-orange" href="#demo" data-slide="prev">
+                <span><i class="fas fa-angle-left fa-3x"></i></span>
+            </a>
+            <a class="carousel-control-next bg-none text-orange" href="#demo" data-slide="next">
+                <span><i class="fas fa-angle-right fa-3x"></i></span>
+            </a>
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators position_ind">
+                <li data-target="#demo" data-slide-to="0" class="active"></li>
+                <li data-target="#demo" data-slide-to="1"></li>
+                <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <div id="pricing" class="container-fluid text-center  ">
+        <h2>PRICING</h2>
+        <h6 class="mb-5">Choose a payment plan that works for you</h6>
+
+        <div class="card-deck">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h1>Basic</h1>
+                </div>
+                <div class="card-body text-muted">
+                    <p><strong>20</strong> Lorem</p>
+                    <p><strong>15</strong> Ipsum</p>
+                    <p><strong>5</strong> Dolor</p>
+                    <p><strong>2</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="card-footer text-muted">
+                    <h3>$19</h3>
+                    <p><small> permonth</small></p>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header">
+                    <h1>Pro</h1>
+                </div>
+                <div class="card-body text-muted">
+                    <p><strong>20</strong> Lorem</p>
+                    <p><strong>15</strong> Ipsum</p>
+                    <p><strong>5</strong> Dolor</p>
+                    <p><strong>2</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="card-footer text-muted">
+                    <h3>$29</h3>
+                    <p><small> permonth</small></p>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </div>
+            <div class="card text-center">
+                <div class="card-header">
+                    <h1>Premium</h1>
+                </div>
+                <div class="card-body text-muted">
+                    <p><strong>20</strong> Lorem</p>
+                    <p><strong>15</strong> Ipsum</p>
+                    <p><strong>5</strong> Dolor</p>
+                    <p><strong>2</strong> Sit</p>
+                    <p><strong>Endless</strong> Amet</p>
+                </div>
+                <div class="card-footer text-muted">
+                    <h3>$49</h3>
+                    <p><small> per month</small></p>
+                    <button class="btn">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- </div>
+        </div> -->
+    </div>
+
+
+    <div id="contact" class="container-fluid bg-grey text-muted">
+        <h2 class="text-center">CONTACT</h2>
+        <div class="row">
+            <div class="col-sm-5">
+                <p>Contact us and we'll get back to you within 24 hours.</p>
+                <p><span><i class="fa fa-map-marker-alt text-muted"></i></span> Chicago, US</p>
+                <p><span><i class="fa fa-mobile-alt text-muted"></i></span> +00 1515151515</p>
+                <p><span><i class="fas fa-envelope-open-text text-muted"></i></span> myemail@something.com</p>
+            </div>
+            <div class="col-sm-7">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+                    </div>
+                    <div class="col-sm-6 form-group">
+                        <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+                    </div>
+                </div>
+                <textarea class="form-control" id="comments" name="comments" placeholder="Comment"
+                    rows="5"></textarea><br>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <button class="btn btn-secondary float-right" type="submit">Send</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid p-0">
+        <img class="img-fluid w-100" src="map.jpg">
+    </div>
+
+
+    <div class="container-fluid text-center  ">
+        <a href="#myPage" title="To Top">
+            <span><i class="fas fa-angle-up fa-2x"></i></span>
+        </a>
+        <p class="text-muted" style="font-size: 15px;">Bootstrap Theme Made By <a
+                href="https://www.w3schools.com">www.w3schools.com</a></p>
+    </div>
+
+
+
+
+</body>
+
+</html>

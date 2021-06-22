@@ -1,0 +1,123 @@
+/* General css  */
+i{
+    color: #f35124;
+}
+body{
+    font: "400 15px Lato, sans-serif";
+    line-height: 1.8;
+}
+.container-fluid{
+    padding: 60px 50px;
+}
+.bg-grey{
+    background-color: #f6f6f6;
+}
+h2{
+    font-size: 24px;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+/* Navbar css  */
+ ul.navbar-nav li.nav-item a{
+    padding: 15px;
+    font-size: 12px;
+    color: white;
+    background-color: #f35124;
+    letter-spacing: 5px;
+}
+ul.navbar-nav li.nav-item a:hover{
+    /* padding: 15px;
+    font-size: 12px; */
+    color: #f35124;
+    background-color: #ffffff;
+    border-color: 1px solid #ffffff;
+}
+.navbar-brand{
+    color: white;
+    background-color: #f35124;
+    border-color: 1px solid #f35124;
+    letter-spacing: 5px;
+}
+.navbar-brand:hover{
+    color: white;
+    background-color: #f35124;
+    border-color: 1px solid #f35124;
+    /* letter-spacing: 5px; */
+}
+.navbar .container, .navbar{
+    background-color: #f35124;
+}
+
+/* Company header css  */
+.jumbotron{
+    background-color: #f35124;
+    text-align: center;
+    color: #ffffff;
+}
+
+/* Contact css */
+#contact {
+    font-size: 14px;
+}
+div.form-group{
+    font-size: 14px;
+}
+
+/* Pricing css  */
+.card-deck .card{
+    border: 1px solid #f35124;
+}
+.card-deck .card:hover{
+    /* border: 1px solid #f35124; */
+    box-shadow: -1px 0px 12px 2px #303030;
+    transition: box-shadow 0.5s ease-in-out;
+}
+.card-deck .card .card-header{
+    color: #ffffff;
+    text-align: center;
+    background-color: #f35124;
+}
+.card-deck .card .card-footer button{
+    color: #ffffff;
+    text-align: center;
+    background-color: #f35124;
+}
+.card-deck .card .card-footer button:hover{
+    color: #f35124;
+    text-align: center;
+    background-color: #ffffff;
+}
+.card-deck .card .card-footer{
+    background-color: #ffffff;
+    border-top: 1px solid #c2c2c2;
+}
+
+.position_ind{
+    position: relative;
+    /* background-color: #f35124; */
+    bottom: 0;
+}
+.position_ind li{
+    border: 1px solid #f35124;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+ul.position_ind li.active{
+    background-color: #f35124 !important;
+}
+button.navbar-toggler{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/* @media (min-width: 0px) and (max-width: 767px) { 
+    .revert_col{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+    }
+ } */
