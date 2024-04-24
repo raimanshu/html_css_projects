@@ -1,0 +1,4 @@
+- multiple divs can be make side by side using 
+row and col
+flex
+float with clear

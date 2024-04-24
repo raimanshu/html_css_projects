@@ -1,0 +1,28 @@
+:root{
+    --primary-color: #009961;
+    --secondary-color: #6c757d;
+
+    /* --helping-color:  */
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.list-style-none{
+    list-style: none;
+}
+h1::after{
+    content: "";
+    display: block;
+    height: 3px;
+    width: 30px;
+    position: relative;
+    bottom: -10px;
+    background-color: var(--primary-color);
+}
+.na{
+    color: var(--secondary-color);
+    text-decoration: line-through;
+}
